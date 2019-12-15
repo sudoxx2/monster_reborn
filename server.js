@@ -7,7 +7,7 @@ const app = express()
 
 // app.use(express.static('template'))
 
-app.use(express.static("template"));
+// app.use(express.static("template"));
 
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname + '/static/main.css'));
@@ -17,6 +17,10 @@ app.use(express.static("template"));
 //     res.sendFile(path.join(__dirname + '/template/base.html'));
 // })
 
-app.listen(5656, () => {
-    console.log('http://localhost:5656')
+app.get('/',function(req,res) {
+    res.sendFile(__dirname + '/template/base.html');
+  });
+
+app.listen(3000, () => {
+    console.log('http://localhost:3000')
 })
