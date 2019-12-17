@@ -19,6 +19,11 @@ app.get('/about', (req, res) => {
     res.render('about')
 })
 
+// get base_calc hbs
+app.get('/monthly-loan', function(req, res) {
+    res.render('monthly_loan_calc', {layout: 'base_calc.handlebars'});
+});
+
 app.listen(3000, () => {
     console.log('http://localhost:3000')
 })
