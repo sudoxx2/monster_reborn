@@ -2,7 +2,7 @@
   "name": "monster_reborn",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +14,8 @@
     "handlebars": "^4.5.3",
     "nodemon": "^2.0.2",
     "pug": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.13.1"
   }
 }
