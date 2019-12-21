@@ -57,6 +57,6 @@ app.get('/mortgage-loan-calc', function(req, res) {
     res.render('mortgage_loan_calc', {layout: 'base_calc.handlebars'});
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('http://localhost:' + PORT)
 })
