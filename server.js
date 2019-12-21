@@ -1,3 +1,4 @@
+const PORT = process.env.port || 3000
 const express = require("express");
 const path = require('path');
 const expbs = require('express-handlebars');
@@ -57,5 +58,5 @@ app.get('/mortgage-loan-calc', function(req, res) {
 });
 
 app.listen(3000, () => {
-    console.log('http://localhost:3000')
+    console.log('http://localhost:' + PORT)
 })
