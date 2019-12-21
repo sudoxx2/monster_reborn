@@ -11,7 +11,7 @@ app.use(express.static('public'))
 
 // get home hbs
 app.get('/', (req, res) => {
-    res.render('home')
+    res.render('index')
 })
 
 // get about hbs
@@ -38,10 +38,6 @@ app.get('/legal-disclaimer', (req, res) => {
 app.get('/side-hustle', (req, res) => {
     res.render('side_hustle')
 })
-
-// app.get('/terms-of-use', (req, res) => {
-//     res.render('terms_of_use')
-// })
 
 // Calculator endpoints //
 
