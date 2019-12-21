@@ -27,9 +27,13 @@ app.get('/buying-house', (req, res) => {
     res.render('buying_house')
 })
 
-// app.get('/privacy-policy', (req, res) => {
-//     res.render('privacy_policy')
-// })
+app.get('/privacy-policy', (req, res) => {
+    res.render('privacy_policy')
+})
+
+app.get('/legal-disclaimer', (req, res) => {
+    res.render('legal_disclaimer')
+})
 
 // app.get('/side-hustle', (req, res) => {
 //     res.render('side_hustle')
