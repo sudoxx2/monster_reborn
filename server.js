@@ -20,18 +20,18 @@ app.get('/about', (req, res) => {
 })
 
 // get base_calc hbs
-app.get('/monthly-loan-calc', function(req, res) {
-    res.render('monthly_loan_calc', {layout: 'base_calc.handlebars'});
+app.get('/loan-calc', function(req, res) {
+    res.render('loan_calc', {layout: 'base_calc.handlebars'});
 });
 
 // get auto loan calc hbs
-app.get('/monthy-auto-loan-calc', function(req, res) {
-    res.render('monthly_auto_loan_calc', {layout: 'base_calc.handlebars'});
+app.get('/auto-loan-calc', function(req, res) {
+    res.render('auto_loan_calc', {layout: 'base_calc.handlebars'});
 });
 
 // get mortgage loan calc hbs
-app.get('/monthly-mortgage-loan-calc', function(req, res) {
-    res.render('monthly_mortgage_loan_calc', {layout: 'base_calc.handlebars'});
+app.get('/mortgage-loan-calc', function(req, res) {
+    res.render('mortgage_loan_calc', {layout: 'base_calc.handlebars'});
 });
 
 app.listen(3000, () => {
