@@ -35,9 +35,9 @@ app.get('/legal-disclaimer', (req, res) => {
     res.render('legal_disclaimer')
 })
 
-// app.get('/side-hustle', (req, res) => {
-//     res.render('side_hustle')
-// })
+app.get('/side-hustle', (req, res) => {
+    res.render('side_hustle')
+})
 
 // app.get('/terms-of-use', (req, res) => {
 //     res.render('terms_of_use')
