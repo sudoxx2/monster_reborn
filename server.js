@@ -11,13 +11,43 @@ app.use(express.static('public'))
 
 // get home hbs
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('home')
 })
 
 // get about hbs
 app.get('/about', (req, res) => {
     res.render('about')
 })
+
+app.get('/buying-cars', (req, res) => {
+    res.render('buying_cars')
+})
+
+app.get('/buying-house', (req, res) => {
+    res.render('buying_house')
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact')
+})
+
+app.get('/home', (req, res) => {
+    res.render('home')
+})
+
+app.get('/privacy-policy', (req, res) => {
+    res.render('privacy_policy')
+})
+
+app.get('/side-hustle', (req, res) => {
+    res.render('side_hustle')
+})
+
+app.get('/terms-of-use', (req, res) => {
+    res.render('terms_of_use')
+})
+
+// Calculator endpoints //
 
 // get base_calc hbs
 app.get('/loan-calc', function(req, res) {
