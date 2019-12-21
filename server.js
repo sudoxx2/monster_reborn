@@ -11,7 +11,7 @@ app.use(express.static('public'))
 
 // get home hbs
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('home')
 })
 
 // get about hbs
@@ -26,14 +26,6 @@ app.get('/buying-cars', (req, res) => {
 app.get('/buying-house', (req, res) => {
     res.render('buying_house')
 })
-
-// app.get('/contact', (req, res) => {
-//     res.render('contact')
-// })
-
-// app.get('/home', (req, res) => {
-//     res.render('home')
-// })
 
 // app.get('/privacy-policy', (req, res) => {
 //     res.render('privacy_policy')
