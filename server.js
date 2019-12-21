@@ -20,8 +20,13 @@ app.get('/about', (req, res) => {
 })
 
 // get base_calc hbs
-app.get('/monthly-loan', function(req, res) {
+app.get('/monthly-loan-calc', function(req, res) {
     res.render('monthly_loan_calc', {layout: 'base_calc.handlebars'});
+});
+
+// get base_calc hbs
+app.get('/auto-loan-calc', function(req, res) {
+    res.render('monthly_auto_loan_calc', {layout: 'base_calc.handlebars'});
 });
 
 app.listen(3000, () => {

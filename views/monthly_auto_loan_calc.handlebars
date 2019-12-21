@@ -1,0 +1,64 @@
+
+<script src="autoLoanCalc.js"></script>
+
+
+<h1>Auto Loan Calculator</h1>
+<hr>
+<div class="row">
+
+<!-- <hr> -->
+<!-- <h3>Enter your Loan amount, Interest Rate, and length of loan in years below</h3> -->
+
+
+
+    <div class="col-md-4 ">
+            
+        <p>Auto Loan Amount: </br>$<input id="amount" type="text" pattern="\d*" min="1" max="1000000" value="25000" onchange="computeAutoLoan()"> <span id="loan_less_zero"
+                style="color: red"></span></p>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100000" value="25000" class="slider" id="myRange">
+        </div>
+        <!-- <p>Down Payment:</br>$<input id="down_payment" type="number" min="1" max="1000000" value="20000"></p> -->
+        <p>Interest Rate: </br><input id="interest_rate" type="text" pattern="\d*" min="0" max="100" value="4" step=".1" onchange="computeAutoLoan()">%</p>
+        <p>months: </br><input id="months" type="text" pattern="\d*" min="1" max="72" value="60" step="1" onchange="computeAutoLoan()"></p>
+        <!-- <button id="mortage_button" onclick="computeLoan()">Submit</button> -->
+        
+
+        <hr>
+    </div>
+
+    
+
+    <div class="col-md-4 changeCol content-section">
+            
+        <!-- <p id="tru_cost" class="margin_zero"></p>
+        <h4 id="total_payment" class="h4_black results_color"></h4> -->
+        <p class="margin_zero">Total Monthly Car Payments:</p>
+        <h4 id="payment" class="h4_black results_color"></h4>
+        
+        <!-- <h3>Breakdown of Total Monthly Car Payments Chart:</h3> -->
+        <p class="margin_zero">Car Principal and Interest:</p>
+        <h4 id="payment2" class="h4_black results_color"></h4>
+        <p class="margin_zero">Insurance:</p>
+        <h4 id="insurance" class="h4_black results_color"></h4>
+        <p class="margin_zero">Maintenance:</p>
+        <h4 id="maintenance" class="h4_black results_color"></h4>
+        <!-- <p class="margin_zero">Total Cost including Interest:</p>
+        <h4 id="total_interest_payment" class="h4_black results_color"></h4> -->
+        <!-- <h3 id="total_payment_including_interest"></h3> -->
+        
+        <hr>
+    </div>
+    
+
+    <div class="col-md-4 changeCol changeChart">
+            
+            <canvas id="pieChartAuto" style="min-height: 387px; min-width: 350;"></canvas>
+            
+    
+    
+    <!-- <div class="col-md-12">
+            <hr>
+    </div> -->
+    
+</div>
