@@ -23,9 +23,9 @@ app.get('/buying-cars', (req, res) => {
     res.render('buying_cars')
 })
 
-// app.get('/buying-house', (req, res) => {
-//     res.render('buying_house')
-// })
+app.get('/buying-house', (req, res) => {
+    res.render('buying_house')
+})
 
 // app.get('/contact', (req, res) => {
 //     res.render('contact')
