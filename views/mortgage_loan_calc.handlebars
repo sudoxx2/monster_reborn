@@ -1,0 +1,50 @@
+
+<script src="mortgageLoanCalc.js"></script>
+
+<h1>Monthly Mortgage Calculator</h1>
+<hr>
+<!-- <hr> -->
+<!-- <h3>Enter your Loan amount, Interest Rate, and length of loan in years below</h3> -->
+
+<div class="row">
+    <div class="col-md-4">
+        <p>Loan Amount: </br>$<input id="amount" type="number" min="1" max="1000000" value="300000" onchange="computeMortgageLoan()"> <span id="loan_less_zero"
+            style="color: red"></span></p>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="1000000" value="300000" class="slider" id="myRange">
+        </div>
+        <p>Down Payment:</br>$<input id="down_payment" type="number" min="1" max="1000000" value="20000" onchange="computeMortgageLoan()"></p>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="400000" value="20000" class="slider" id="myRange1">
+        </div>
+        <p>Interest Rate: </br><input id="interest_rate" type="number" min="0" max="100" value="4" step=".1" onchange="computeMortgageLoan()">%</p>
+        <p>Years: </br><input id="months" type="number" min="1" max="72" value="30" step="1" onchange="computeMortgageLoan()"></p>
+        <!-- <button id="mortage_button" onclick="computeMortgageLoan()">Submit</button> -->
+        
+        
+        <!-- <input class="number"> -->
+        
+
+
+    </div>
+
+    <div class="col-md-4 changeCol">
+            
+            
+        <!-- <h2>Breakdown of Monthly Mortgage payments Chart:</h2> -->
+        <p class="margin_zero">Total Monthly Mortgage Payments:</p>
+            <h4 id="payment" class="h4_black results_color"></h4>
+        <p class="margin_zero">Principal and interest:</p>
+        <h4 id="principal_and_interest" class="h4_black results_color"></h4>
+        <p class="margin_zero">PMI:</p>
+        <h4 id="total_interest_payment" class="h4_black results_color"></h4>
+        <p class="margin_zero">Property Tax:</p>
+        <h4 id="total_payment" class="h4_black results_color"></h4>
+        <p class="margin_zero">Homeowners Insurance:</p>
+        <h4 id="home_owners_insurance" class="h4_black results_color"></h4>
+    </div>
+    <div class="col-md-4 changeCol">
+            
+            <canvas id="pieChart" style="min-height: 387px; min-width: 350;"></canvas>
+
+</div>
